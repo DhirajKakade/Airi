@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appintroduction.fragments.AppIntroduction1Fragment"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp">
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/ic_baseline_close_24"
+            app:tint="@color/purple_500" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Getting all\nfresh food recipes"
+            android:textSize="31sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/app_introduction1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All cheft certified make food fresh\nrecipe for you"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+
+            android:alpha="0.8" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  2  "
+            android:alpha="0.6"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:alpha="0.6"
+            android:textColor="@color/white" />
+
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
