@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Airi">
-        <activity android:name=".auth.SignUpActivity"></activity>
+        <activity android:name=".auth.AllowNorificationActivity"></activity>
+        <activity android:name=".auth.PhoneVerificationActivity" />
+        <activity android:name=".auth.RegisterPhoneActivity" />
+        <activity android:name=".auth.ForgotPasswordActivity" />
+        <activity android:name=".auth.SignUpActivity" />
         <activity android:name=".auth.LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".appintroduction.AppIntroductionMainActivity" />
-        <activity android:name=".appintroduction.fragments.AppIntroduction1Fragment" />
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
