@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Airi">
-        <activity android:name=".auth.AllowNorificationActivity"></activity>
+        <activity android:name=".activity.ProductActivity"></activity>
+        <activity android:name=".auth.AllowNorificationActivity" />
         <activity android:name=".auth.PhoneVerificationActivity" />
         <activity android:name=".auth.RegisterPhoneActivity" />
         <activity android:name=".auth.ForgotPasswordActivity" />
