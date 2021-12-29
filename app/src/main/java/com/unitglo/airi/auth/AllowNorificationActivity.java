@@ -1,24 +1,23 @@
 package com.unitglo.airi.auth;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 
 import com.unitglo.airi.MainActivity;
 import com.unitglo.airi.R;
 
-import static android.view.WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS;
-
 public class AllowNorificationActivity extends AppCompatActivity {
 
     private LinearLayout llAllowNotificationAllowNotification;
     private LinearLayout llDontAllowAllowNotification;
+    private CardView cardBackAllowNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +38,30 @@ public class AllowNorificationActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AllowNorificationActivity.this, MainActivity.class);
                 startActivity(intent);
+                finishAffinity();
             }
         });
 
+        llDontAllowAllowNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AllowNorificationActivity.this, MainActivity.class);
+                startActivity(intent);
+                finishAffinity();
+            }
+        });
+
+        cardBackAllowNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 
     private void initView() {
         llAllowNotificationAllowNotification = findViewById(R.id.llAllowNotificationAllowNotification);
         llDontAllowAllowNotification = findViewById(R.id.llDontAllowAllowNotification);
+        cardBackAllowNotification = findViewById(R.id.cardBackAllowNotification);
     }
 }
